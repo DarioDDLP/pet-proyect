@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../styles/css/Inter/Inter-VariableFont_slnt,wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../styles/css/Inter/Inter-VariableFont_slnt,wght.ttf");
+  font-weight: 700;
+}
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  font-family: "inter";
+  font-weight: 400;
+}
+
+.master {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .left {
+  background-color: hsl(244deg, 38%, 16%);
+  width: 50%;
+  padding: 60px 100px 60px 60px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .container .left {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container .left {
+    order: 2;
+  }
+}
+.container .left .parrafo {
+  margin-top: 30px;
+}
+.container .left h1.title, .container .left h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "inter";
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .container .left h1.title, .container .left h2 {
+    text-align: center;
+  }
+}
+.container .left p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+@media (max-width: 600px) {
+  .container .left p {
+    text-align: center;
+  }
+}
+.container .left .container-numbers {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .container .left .container-numbers {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .container .left .numbers {
+    margin-top: 20px;
+  }
+}
+.container .right {
+  background-color: hsl(277deg, 64%, 61%);
+  width: 50%;
+  display: flex;
+}
+@media (max-width: 600px) {
+  .container .right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container .right {
+    order: 1;
+  }
+}
+.container .right .image-desktop {
+  width: 100%;
+  height: auto;
+  opacity: 70%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=ej-sass.css.map */

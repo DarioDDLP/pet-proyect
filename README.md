@@ -1,2 +1,0 @@
-# pet-proyect
-Prácticas varias
