@@ -32,9 +32,11 @@ body {
         flex-direction: column;
             @media (max-width: 600px) {width: 100%;}
             @media (max-width: 600px) {order: 2;}
+            @media (max-width: 600px) {padding: 60px;}
 
         .parrafo {
-            margin-top: 30px;
+            margin-block: 30px;
+            font-size: 15px;
         }
 
         h1.title, h2 {
@@ -46,6 +48,7 @@ body {
         p {
             color: colors.$text2;
             @media (max-width: 600px) {text-align: center;}
+            
         }
 
         .container-numbers {
@@ -53,6 +56,7 @@ body {
             margin-top: auto;
             justify-content: space-between;
                 @media (max-width: 600px) {flex-direction: column;}
+                
 
         }
         .numbers {
@@ -72,7 +76,8 @@ body {
         .image-desktop {
             width: 100%;
             height: auto;
-            opacity: 70%;
+            /* opacity: 70%; */
+            mix-blend-mode: multiply;
             object-fit: cover; 
         }
     }
